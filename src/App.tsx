@@ -11,6 +11,8 @@ import { GraduateProfile } from './types';
 import ConfettiEffect from './components/ConfettiEffect';
 import GraduateCard from './components/GraduateCard';
 import PhotoGallery from './components/PhotoGallery';
+import AudioPlayer from './components/AudioPlayer';
+import GraduationVideo from './components/GraduationVideo';
 
 const headerContainerVariants = {
   hidden: { opacity: 0 },
@@ -37,15 +39,16 @@ const headerItemVariants = {
 };
 
 const sectionRevealVariants = {
-  hidden: { opacity: 0, y: 35 },
+  hidden: { opacity: 0, y: 50, scale: 0.98 },
   visible: {
     opacity: 1,
     y: 0,
+    scale: 1,
     transition: {
       type: 'spring',
-      stiffness: 70,
-      damping: 15,
-      duration: 0.7
+      stiffness: 65,
+      damping: 16,
+      duration: 0.85
     }
   }
 };
@@ -67,6 +70,9 @@ export default function App() {
       
       {/* Interactive Confetti Background Canvas */}
       <ConfettiEffect />
+
+      {/* Background Graduation Song Player */}
+      <AudioPlayer />
 
       {/* Main Top Header Section */}
       <header className="relative py-12 md:py-16 text-center border-b border-slate-900 bg-radial-at-t from-slate-900 via-slate-950 to-slate-950 px-4" id="app-header">
@@ -154,6 +160,17 @@ export default function App() {
             <h2 className="text-xl font-extrabold text-white mt-1">Diiwaanka Qalin-jabiyaha</h2>
           </div>
           <GraduateCard profile={profile} />
+        </motion.section>
+
+        {/* SECTION 1.5: Graduation Video & Song */}
+        <motion.section
+          variants={sectionRevealVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="border-t border-slate-900/60 pt-6"
+        >
+          <GraduationVideo />
         </motion.section>
 
         {/* SECTION 2: Memory Photo Gallery */}

@@ -7,6 +7,11 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Camera, Maximize2, Sparkles, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
+import original from '../assets/images/original.jpg';
+import ikraanPortrait from '../assets/images/ikraan_portrait_1782505483584.jpg';
+import ikraanSchool1 from '../assets/images/ikraan_school_1_1782507880611.jpg';
+import ikraanSchool2 from '../assets/images/ikraan_school_2_1782507894486.jpg';
+
 interface PhotoItem {
   id: string;
   url: string;
@@ -17,25 +22,25 @@ interface PhotoItem {
 const GALLERY_PHOTOS: PhotoItem[] = [
   {
     id: 'photo-1',
-    url: '/src/assets/images/original.jpg',
+    url: original,
     title: 'Wajiga Rasmiga ah',
     description: 'Sawirka rasmiga ah ee Ikraan Abdi Ali.'
   },
   {
     id: 'photo-2',
-    url: '/src/assets/images/ikraan_portrait_1782505483584.jpg',
+    url: ikraanPortrait,
     title: 'Ikraan Abdi Ali',
     description: 'Sawir kale oo qurux badan oo ku dhex jira albumka qalin-jabinta.'
   },
   {
     id: 'photo-3',
-    url: '/src/assets/images/ikraan_school_1_1782507880611.jpg',
+    url: ikraanSchool1,
     title: 'Xusuusta Dugsiga Sare',
     description: 'Xusuustii qaaliga ahayd ee maalmihii diyaarinta qalin-jabinta.'
   },
   {
     id: 'photo-4',
-    url: '/src/assets/images/ikraan_school_2_1782507894486.jpg',
+    url: ikraanSchool2,
     title: 'Maalintii Qalin-jabinta',
     description: 'Farxadda iyo guusha weyn ee dugsiga sare.'
   }

@@ -4,6 +4,7 @@
  */
 
 import { GraduateProfile, GuestbookMessage, PoemPreset } from './types';
+import original from './assets/images/original.jpg';
 
 export const DEFAULT_GRADUATE: GraduateProfile = {
   name: 'Ikraan Abdi Ali',
@@ -11,7 +12,7 @@ export const DEFAULT_GRADUATE: GraduateProfile = {
   graduationYear: 2026,
   gpa: '',
   honors: '',
-  photoUrl: '/src/assets/images/original.jpg',
+  photoUrl: original,
   motto: 'Aqoontu waa iftiinka nolosha iyo furaha barwaaqada mustaqbalka.'
 };
 
