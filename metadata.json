@@ -1,6 +1,0 @@
-{
-  "name": "Graduation Congratulations",
-  "description": "Web hambalyo iyo dhiirigelin ah oo loogu talagalay ardayda ka qalin-jabisay dugsiga sare, lehna sawirro, fariimo, iyo animations qurxoon.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
