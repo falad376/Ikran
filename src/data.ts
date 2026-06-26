@@ -6,12 +6,12 @@
 import { GraduateProfile, GuestbookMessage, PoemPreset } from './types';
 
 export const DEFAULT_GRADUATE: GraduateProfile = {
-  name: 'Khadar Cabdi Yuusuf',
-  schoolName: 'Dugsiga Sare ee Ifye',
+  name: 'Ikraan Abdi Ali',
+  schoolName: 'Dugsi Sare',
   graduationYear: 2026,
-  gpa: '3.94 / 4.0',
-  honors: 'Ardayga Sanadka ee Sayniska & Teknolojiyadda (Excellent Honors)',
-  photoUrl: '/src/assets/images/graduate_portrait_1782386813752.jpg',
+  gpa: '',
+  honors: '',
+  photoUrl: '/src/assets/images/original.jpg',
   motto: 'Aqoontu waa iftiinka nolosha iyo furaha barwaaqada mustaqbalka.'
 };
 
@@ -36,44 +36,7 @@ export const SOMALI_POEMS: PoemPreset[] = [
   }
 ];
 
-export const DEFAULT_MESSAGES: GuestbookMessage[] = [
-  {
-    id: 'msg-1',
-    senderName: 'Hooyo & Aabbe',
-    relationship: 'family',
-    message: 'Hambalyo wiilkaygii qaaliga ahaa! Aad iyo aad ayaan kuugu fakhreynaa maanta. Jidka aqoonta ee aad qaadday Ilaahay ha kuu barakeeyo, guulo kale oo waaweynna ha kuu soo hooyo.',
-    badge: '👑 Duco',
-    likes: 12,
-    createdAt: '2 saac ka hor'
-  },
-  {
-    id: 'msg-2',
-    senderName: 'Cali Cabdi (Walaalkaa)',
-    relationship: 'family',
-    message: 'Bro, run ahaantii waad mudnayd guushan! Habeenadii aad soo jeedday iyo dadaalkaadii maanta ayay dhalalaqeen. Jaamacadda dhexdeeda ayaan kugu sugeynaa!',
-    badge: '🎓 Geesi',
-    likes: 8,
-    createdAt: '4 saac ka hor'
-  },
-  {
-    id: 'msg-3',
-    senderName: 'Macallin Maxamed Cilmi',
-    relationship: 'teacher',
-    message: 'Khadar wuxuu ahaa mid ka mid ah ardaydii ugu dadaalka iyo asluubta badnayd ee aan wax u baray. Hambalyo qalin-jabintaada, waxaan kuu rajaynayaa inaad noqoto mid dalka iyo dadkaba anfacda.',
-    badge: '📚 Caaqil',
-    likes: 15,
-    createdAt: '1 maalin ka hor'
-  },
-  {
-    id: 'msg-4',
-    senderName: 'Ayaan Daahir (Saaxiibkaaga)',
-    relationship: 'friend',
-    message: 'Hambalyo saaxiib! Guul weyn oo taariikhi ah ayaad gaadhay. Dabaal-degga caawa isku diyaarso, we did it!',
-    badge: '🌟 Xiddig',
-    likes: 6,
-    createdAt: '1 maalin ka hor'
-  }
-];
+export const DEFAULT_MESSAGES: GuestbookMessage[] = [];
 
 export const BADGE_PRESETS = [
   { emoji: '🎓', label: 'Aqoonyahan' },
