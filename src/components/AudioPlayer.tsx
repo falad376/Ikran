@@ -65,6 +65,7 @@ export default function AudioPlayer() {
           modestbranding: 1,
           loop: 1,
           playlist: '8SIOA2xe0YY', // required for loop
+          start: 8, // Start at 0:08 (8 seconds
         },
         events: {
           onReady: () => {
